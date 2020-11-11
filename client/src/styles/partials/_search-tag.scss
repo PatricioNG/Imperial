@@ -1,0 +1,25 @@
+.search-tag{
+    background-color: lighten($primary-borders, 30%);
+    border-radius: $default-border-radius;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: initial;
+    padding: 1rem;
+    margin: 0 0.2rem;
+
+    &:hover{
+        background-color: lighten($primary-borders, 20%);
+    }
+
+    &__icon{
+        margin-right: 0.5rem;
+    }
+
+    &__tag-text{
+        margin: 0;
+    }
+
+    
+}
