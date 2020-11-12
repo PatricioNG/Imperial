@@ -94,15 +94,18 @@
   font-display: swap;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #FAF9F8;
-  font-family: 'Roboto', serif;
+  font-family: "Roboto", serif;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
@@ -116,6 +119,21 @@ html, body {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.listing-details__button-secondary, .listing-details__button {
+  border-radius: 7px;
+  background-color: #404EA3;
+  color: #FFFFFF;
+  border: 0;
+  height: 2.7rem;
+  padding: 0 2rem;
+  font-size: 0.8rem;
+}
+
+.listing-details__button-secondary {
+  background-color: #e1e1e1;
+  color: #000;
 }
 
 .imperial-header {
@@ -454,5 +472,78 @@ html, body {
 
 .search-tag__tag-text {
   margin: 0;
+}
+
+.results-page {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.listing-details {
+  width: 50%;
+  max-width: 50rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  border: 1px solid #d4d4d4;
+  border-radius: 0.5rem;
+  margin: 1.5rem 0;
+}
+
+.listing-details__top-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #d4d4d4;
+  border-radius: 0.5rem;
+  background: #FFFFFF;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.listing-details__logo {
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 1px solid #d4d4d4;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+  margin-right: 0.75rem;
+}
+
+.listing-details__job-title {
+  width: calc(100% - 3.5rem - 0.75rem);
+}
+
+.listing-details__company-location {
+  width: calc(100% - 3.5rem - 0.75rem);
+}
+
+.listing-details__contract {
+  width: calc(100% - 3.5rem - 0.75rem);
+}
+
+.listing-details__button-secondary {
+  margin-left: 0.75rem;
+}
+
+.listing-details__desc-container {
+  padding: 1rem 1.5rem;
 }
 /*# sourceMappingURL=styles.css.map */
