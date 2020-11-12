@@ -8,5 +8,5 @@ export default function ResultsPage() {
       {/* specific listing details on the right (sticky) */}
       <ListingDetails />
     </main>
-  )
+  );
 }

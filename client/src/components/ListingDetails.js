@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import imperialSymbol from "../assets/icons/imperialSymbol.svg";
 
 export default function ListingDetails() {
@@ -5,15 +6,15 @@ export default function ListingDetails() {
     <section className="listing-details">
       <div className="listing-details__top-container">
         <img src={imperialSymbol} alt="" className="listing-details__logo" />
-        <h2 className="listing-details__job-title">Job Title</h2>{" "}
-        {/* job title */}
-        <p className="listing-details__company-location">
-          Company - Location
-        </p>{" "}
-        {/* company - location */}
-        <p className="listing-details__contract">
-          Full-time, Permanent - Remote
-        </p>{" "}
+        <div className="listing-details__text-container">
+          <h2 className="listing-details__job-title">Job Title</h2>
+          {/* job title */}
+          <p className="listing-details__job-text">Company - Location</p>
+          {/* company - location */}
+          <p className="listing-details__job-text">
+            Full-time, Permanent - Remote
+          </p>
+        </div>
         {/* contract - on-site/remote */}
         <button className="listing-details__button">Apply Now</button>
         <button className="listing-details__button-secondary">Save</button>
@@ -50,6 +51,7 @@ export default function ListingDetails() {
           <li>Perk</li>
         </ul>
         <p>Posted x days ago</p> {/* postedDaysAgo */}
+        <Link to="/report">report job</Link>
       </div>
     </section>
   );
