@@ -16,6 +16,30 @@ export default function LandingPage() {
         {
             term: 'Stormtrooper Corps',
             searchQuery: 'stormtrooper+corps'
+        },
+        {
+            term: 'Sith',
+            searchQuery: 'sith'
+        },
+        {
+            term: 'Jakku',
+            searchQuery: 'jakku'
+        },
+        {
+            term: 'Stormtrooper Corps',
+            searchQuery: 'stormtrooper+corps'
+        },
+        {
+            term: 'Sith',
+            searchQuery: 'sith'
+        },
+        {
+            term: 'Jakku',
+            searchQuery: 'jakku'
+        },
+        {
+            term: 'Stormtrooper Corps',
+            searchQuery: 'stormtrooper+corps'
         }
     ]
 
@@ -66,6 +90,10 @@ export default function LandingPage() {
                     </ul>
                 </section>
             </article>
+            <section className="landing-page__employee-cta">
+                <h2 className="landing-page__employee-cta-heading">Help the Empire find Jedi</h2>
+                <button className="landing-page__employee-cta-upload">Upload your hologram</button>
+            </section>
         </main >
     )
 

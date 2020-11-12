@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../assets/icons/ImperialLogo.svg';
 
 export default function ImperialHeader() {
@@ -12,19 +12,19 @@ export default function ImperialHeader() {
                 </Link>
                 <ul className="imperial-header__nav-list">
                     <li className="imperial-header__list-item">
-                        <Link to="/jobs" className="imperial-header__nav-link">
+                        <NavLink exact to="/" className="imperial-header__nav-link">
                             Find Jobs
-                        </Link>
+                        </NavLink>
                     </li>
                     <li className="imperial-header__list-item">
-                        <Link to="/reviews" className="imperial-header__nav-link">
+                        <NavLink to="/reviews" className="imperial-header__nav-link">
                             Emperor's Review
-                        </Link>
+                        </NavLink>
                     </li>
                     <li className="imperial-header__list-item">
-                        <Link to="/salaries" className="imperial-header__nav-link">
+                        <NavLink to="/salaries" className="imperial-header__nav-link">
                             Find Salaries
-                        </Link>
+                        </NavLink>
                     </li>
                 </ul>
             </nav>
