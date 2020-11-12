@@ -1,16 +1,35 @@
-html, body{
-    margin: 0;
-    box-sizing: border-box;
-    background-color: $primary-background;
-    font-family: 'Roboto', serif;
+html,
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: $primary-background;
+  font-family: "Roboto", serif;
 }
 
-*, *::after, *::before{
-    box-sizing: inherit;
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
 }
 
-.App{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.App {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+// ------------ extends ------------
+%primary-button {
+  border-radius: $default-border-radius;
+  background-color: $primary-cta;
+  color: $secondary-background;
+  border: 0;
+  height: 2.7rem;
+  padding: 0 2rem;
+  font-size: 0.8rem;
+}
+
+%secondary-button {
+  @extend %primary-button;
+  background-color: lighten($primary-borders, 30%);
+  color: #000;
 }
