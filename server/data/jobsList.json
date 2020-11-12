@@ -6,7 +6,12 @@
         "rating": 4,
         "reviewCount": 9,
         "location": "Galactic City, Coruscant",
-        "postedDaysAgo": 12
+        "postedDaysAgo": 12,
+        "responsibilities": [
+            "Check for Imperial approved communications only among civilians",
+            "Log exceptions for troopers to follow up on",
+            "Keep an eye out for rebel communications"
+        ]
     },
     {
         "id": 2,
@@ -15,7 +20,13 @@
         "rating": 5,
         "reviewCount": 329,
         "location": "DS-1 Death Star Mobile Battle Station",
-        "postedDaysAgo": 3420
+        "postedDaysAgo": 3420,
+        "responsibilities": [
+            "Manage day to day operations among the DS-1 Battle Station",
+            "Submit to a 10 year term among the DS-1",
+            "Prepare the DS-1 for planetary annihilation at a moment's notice",
+            "Applicants must be ready to defend the station should it be necessary"
+        ]
     },
     {
         "id": 3,
@@ -24,7 +35,13 @@
         "rating": 0,
         "reviewCount": 0,
         "location": "Redacted",
-        "postedDaysAgo": 93
+        "postedDaysAgo": 93,
+        "responsibilities": [
+            "Redacted",
+            "Redacted",
+            "Redacted",
+            "Redacted"
+        ]
     },
     {
         "id": 4,
@@ -33,6 +50,12 @@
         "rating": 5,
         "reviewCount": 564321,
         "location": "Anywhere",
-        "postedDaysAgo": 5468
+        "postedDaysAgo": 5468,
+        "responsibilities": [
+            "Follow orders.",
+            "Follow orders.",
+            "Follow orders.",
+            "Follow orders."
+        ]
     }
 ]
