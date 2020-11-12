@@ -1,0 +1,96 @@
+[
+    {
+        "id": 1,
+        "title": "Imperial Security Bureau Agent",
+        "company": "Communications Division",
+        "rating": 4,
+        "reviewCount": 9,
+        "location": "Galactic City, Coruscant",
+        "details": {
+            "perks": [
+                "Role in the Galactic City",
+                "Offsite from any war zones",
+                "Highly technical role, working with data",
+                "Exposure to the other administrative Imperial divisions"
+            ],
+            "jobDescription": "Looking to replace the spy Alexsandry Kallus with a new agent, spend your days in the convieniently located communications division right in the heart of the Galactic City! The Job itself is simple, moderate and observe civilian communications for Imperial approved discussions. Any exceptions are to be tracked and logged for troopers to follow up on. Lots of opportunities for growth, including eventual transfer to the Imperial fleet to help search and tap into rebel communications. Low chance of being executed by the Emperor for incompetence as you won't directly interact with leadership",
+            "responsibilities": [
+                "Check for Imperial approved communications only among civilians",
+                "Log exceptions for troopers to follow up on",
+                "Keep an eye out for rebel communications"
+            ],
+            "postedDaysAgo": 12
+        }
+    },
+    {
+        "id": 2,
+        "title": "Battle Station Operations Staff",
+        "company": "Battle Station Command",
+        "rating": 5,
+        "reviewCount": 329,
+        "location": "DS-1 Death Star Mobile Battle Station",
+        "details": {
+            "perks": [
+                "Live and work aboard the Death Star!",
+                "Super secure, no chance of self destruction",
+                "Work in any of the eight major departments!"
+            ],
+            "jobDescription": "Battle Station Command is looking for more recruits to staff the DS-1 Death Star Mobile Battle Station. Live and work in the most luxurious role in the Imperial Military. DS-1 has eight major departments you can choose to work in (pending your prior experience), engineering, logistics, maintenance, medical, security, station defense, or technical support. Feeling stuck in your current role? Feel free to requisition a move to a new department. Note: successful applicants sign on for a 10 year term, once you board the DS-1 you will not be able to leave until your term is complete.",
+            "responsibilities": [
+                "Manage day to day operations among the DS-1 Battle Station",
+                "Submit to a 10 year term among the DS-1",
+                "Prepare the DS-1 for planetary annihilation at a moment's notice",
+                "Applicants must be ready to defend the station should it be necessary"
+            ],
+            "postedDaysAgo": 3420
+        }
+    },
+    {
+        "id": 3,
+        "title": "Imperial Special Forces",
+        "company": "Special Forces",
+        "rating": 0,
+        "reviewCount": 0,
+        "location": "Redacted",
+        "details": {
+            "perks": [
+                "Redacted",
+                "Redacted",
+                "Redacted",
+                "Redacted"
+            ],
+            "jobDescription": "Redacted",
+            "responsibilities": [
+                "Redacted",
+                "Redacted",
+                "Redacted",
+                "Redacted"
+            ],
+            "postedDaysAgo": 93
+        }
+    },
+    {
+        "id": 4,
+        "title": "Storm Trooper",
+        "company": "Imperial Military",
+        "rating": 5,
+        "reviewCount": 564321,
+        "location": "Anywhere",
+        "details": {
+            "perks": [
+                "Cool Armor!",
+                "Guns!",
+                "Lots of friends!",
+                "Visit lots of planets!"
+            ],
+            "jobDescription": "Permanently recruiting: The Imperial Military is looking for more Storm Troopers, always. Apply to be one today! Accuracy in shooting not required.",
+            "responsibilities": [
+                "Follow orders.",
+                "Follow orders.",
+                "Follow orders.",
+                "Follow orders."
+            ],
+            "postedDaysAgo": 5468
+        }
+    }
+]

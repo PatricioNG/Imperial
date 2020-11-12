@@ -151,11 +151,11 @@ body {
 }
 
 .imperial-header__nav {
+  margin-left: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  max-width: 1200px;
 }
 
 .imperial-header__nav-list {
@@ -189,6 +189,27 @@ body {
           align-items: center;
   font-size: 0.9rem;
   color: initial;
+  position: relative;
+}
+
+.imperial-header__nav-link.active::after {
+  width: 100%;
+  height: 2px;
+  background-color: #404EA3;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
+.imperial-header__nav-link:hover::after {
+  width: 100%;
+  height: 2px;
+  background-color: #404EA3;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
 }
 
 .imperial-header__nav-link--logo {
@@ -197,6 +218,10 @@ body {
           align-items: center;
   height: 58px;
   padding-bottom: 8px;
+}
+
+.imperial-header__nav-link--logo:hover::after {
+  display: none;
 }
 
 .landing-page {
@@ -323,7 +348,14 @@ body {
   padding-left: 1rem;
 }
 
-.landing-page__job-form-button {
+.landing-page__job-form-input:focus {
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
+  outline: none;
+  border-color: #404EA3;
+}
+
+.landing-page__job-form-button, .landing-page__employee-cta-upload {
   border-radius: 7px;
   background-color: #404EA3;
   color: #FFFFFF;
@@ -331,6 +363,11 @@ body {
   height: 2.7rem;
   padding: 0 2rem;
   font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.landing-page__job-form-button:hover, .landing-page__employee-cta-upload:hover {
+  background-color: #323c7e;
 }
 
 .landing-page__posting-cta {
@@ -356,7 +393,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 8rem;
+  padding-bottom: 4rem;
 }
 
 .landing-page__recommended-wrapper {
@@ -375,7 +412,7 @@ body {
   padding: 1rem 0;
 }
 
-.landing-page__recommended-heading {
+.landing-page__recommended-heading, .landing-page__employee-cta-heading {
   font-size: 1.6rem;
   margin-bottom: 0.5rem;
 }
@@ -383,12 +420,28 @@ body {
 .landing-page__recommended-list {
   margin: 0;
   padding: 0;
-  width: 50%;
+  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.landing-page__employee-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .search-tag {
@@ -406,7 +459,7 @@ body {
   text-decoration: none;
   color: initial;
   padding: 1rem;
-  margin: 0 0.2rem;
+  margin: 0 0.2rem 0.4rem 0.2rem;
 }
 
 .search-tag:hover {
