@@ -11,6 +11,13 @@
   align-items: center;
   // width: 40%;
   position: relative;
+  transition: all 0.125s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
+    outline: none;
+    border-color: $primary-cta;
+  }
 
   &::after {
     position: absolute;
