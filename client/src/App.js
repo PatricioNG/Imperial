@@ -13,6 +13,7 @@ function App() {
   const history = useHistory()
 
   const [jobList, setJobList] = useState(null);
+  const [filteredJobs, setFilteredJobs] = useState(null);
 
   const handleClick = (event) => {
     event.preventDefault();
@@ -26,14 +27,16 @@ function App() {
       let newJobList = jobList.filter((job) => {
         return job.title.toLowerCase().includes(searchTerms.what) || job.company.toLowerCase().includes(searchTerms.what)
       })
-      setJobList(newJobList.filter((job) => job.location.toLowerCase().includes(searchTerms.where)))
+      setFilteredJobs(newJobList.filter((job) => job.location.toLowerCase().includes(searchTerms.where)))
     } else if (searchTerms.what.trim() && !searchTerms.where.trim()) { //What exists
 
-      setJobList(jobList.filter((job) => {
+      setFilteredJobs(jobList.filter((job) => {
         return job.title.toLowerCase().includes(searchTerms.what) || job.company.toLowerCase().includes(searchTerms.what)
       }))
     } else if (!searchTerms.what.trim() && searchTerms.where.trim()) { //Where exists
-      setJobList(jobList.filter((job) => job.location.toLowerCase().includes(searchTerms.where)))
+      setFilteredJobs(jobList.filter((job) => job.location.toLowerCase().includes(searchTerms.where)))
+    } else {
+      setFilteredJobs(jobList);
     }
 
     history.push('/jobs');
@@ -52,7 +55,7 @@ function App() {
       <ImperialHeader refreshData={refreshData} />
       <Switch>
         <Route path="/" exact render={(routerProps) => <LandingPage handleClick={handleClick} />} />
-        <Route path="/jobs" exact render={() => <ResultsPage jobs={jobList} />} />
+        <Route path="/jobs" exact render={() => <ResultsPage jobs={filteredJobs} handleClick={handleClick} />} />
         <Route path="/report" exact component={ReportPage} />
       </Switch>
     </div>
