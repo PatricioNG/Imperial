@@ -1,163 +1,138 @@
-.landing-page{
+.landing-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__banner {
+    max-width: $maximum-width;
     width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__banner-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  &__banner-icon {
+    margin-right: 0.7rem;
+  }
+
+  &__banner-link {
+    text-decoration: none;
+    color: $primary-cta;
+    font-size: 0.9rem;
+    margin-left: 0.3rem;
+  }
+
+  &__job-search {
+    width: 100%;
+    background-color: $secondary-background;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 5rem;
+  }
 
-    &__banner{
-        max-width: $maximum-width;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
+  &__job-form {
+    margin: 3rem 0 2rem 0;
+    width: 100%;
+    max-width: $maximum-width;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
 
-    &__banner-text{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.1rem;
-        font-weight: bold;
-    }
+  &__job-form-section {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 
-    &__banner-icon{
-        margin-right: 0.7rem;
-    }
+  &__job-form-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 0 0.2rem 0;
+  }
 
-    &__banner-link{
-        text-decoration: none;
-        color: $primary-cta;
-        font-size: 0.9rem;
-        margin-left: 0.3rem;
-    }
+  &__job-form-label {
+    font-size: 1rem;
+    color: $primary-labels;
+    display: flex;
+    flex-direction: column;
+  }
 
-    &__job-search{
-        width: 100%;
-        background-color: $secondary-background;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 5rem;
-    }
+  &__job-form-input {
+    @extend %primary-input;
+  }
 
-    &__job-form{
-        margin: 3rem 0 2rem 0;
-        width: 100%;
-        max-width: $maximum-width;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: flex-end;
-    }
+  &__job-form-button {
+    @extend %primary-button;
+  }
 
-    &__job-form-section{
-        width: 35%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
+  &__posting-cta {
+    margin: 0 0 1.5rem 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
 
-    &__job-form-heading{
-        font-size: 2rem;
-        font-weight: bold;
-        margin: 0 0 0.2rem 0;
-    }
+  &__posting-cta-link {
+    color: $primary-cta;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
 
-    &__job-form-label{
-        font-size: 1rem;
-        color: $primary-labels;
-        display: flex;
-        flex-direction: column;
-    }
+  &__recommended {
+    border-top: 1px solid lighten($primary-borders, 35%);
+    background-color: $secondary-background;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4rem;
+  }
 
-    &__job-form-input{
-        width: 95%;
-        margin-top: 0.5rem;
-        height: 2.7rem;
-        border-radius: $default-border-radius;
-        border: 1px solid $primary-borders;
-        padding-left: 1rem;
+  &__recommended-wrapper {
+    width: 100%;
+    max-width: $maximum-width;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+  }
 
-        &:focus{
-            box-shadow: 0 0.5rem 1rem rgba(0,0,0,.08);
-            outline: none;
-            border-color: $primary-cta;
-        }
-    }
+  &__recommended-heading {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+  }
 
-    &__job-form-button{
-        border-radius: $default-border-radius;
-        background-color: $primary-cta;
-        color: $secondary-background;
-        border: 0;
-        height: 2.7rem;
-        padding: 0 2rem;
-        font-size: 0.8rem;
-        font-weight: bold;
+  &__recommended-list {
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-        &:hover{
-            background-color: darken($primary-cta, 10%);
-        }
-    }
+  &__employee-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    &__posting-cta{
-        margin: 0 0 1.5rem 0;
-        font-size: 0.9rem;
-        font-weight: bold;
+  &__employee-cta-heading {
+    @extend .landing-page__recommended-heading;
+  }
 
-    }
-
-    &__posting-cta-link{
-        color: $primary-cta;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 1.1rem;
-    }
-
-    &__recommended{
-        border-top: 1px solid lighten($primary-borders, 35%);
-        background-color: $secondary-background;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        padding-bottom: 4rem;
-    }
-
-    &__recommended-wrapper{
-        width: 100%;
-        max-width: $maximum-width;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem 0;
-    }
-
-    &__recommended-heading{
-        font-size: 1.6rem;
-        margin-bottom: 0.5rem;
-    }
-
-    &__recommended-list{
-        margin: 0;
-        padding: 0;
-        width: 70%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    &__employee-cta{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    &__employee-cta-heading{
-        @extend .landing-page__recommended-heading;
-    }
-
-    &__employee-cta-upload{
-        @extend .landing-page__job-form-button;
-    }
-
-
+  &__employee-cta-upload {
+    @extend .landing-page__job-form-button;
+  }
 }

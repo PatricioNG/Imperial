@@ -26,9 +26,12 @@ body {
   height: 2.7rem;
   padding: 0 2rem;
   font-size: 0.8rem;
+  transition: all 0.125s ease-in-out;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: darken($primary-cta, 10%);
+    box-shadow: inset 0 0 0.25rem darken($primary-cta, 20%);
   }
 }
 
@@ -37,7 +40,26 @@ body {
   background-color: lighten($primary-borders, 30%);
   color: #000;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: lighten($primary-borders, 20%);
+    box-shadow: inset 0 0 0.25rem $primary-borders;
+  }
+}
+
+%primary-input {
+  width: 95%;
+  margin-top: 0.5rem;
+  height: 2.7rem;
+  border-radius: $default-border-radius;
+  border: 1px solid $primary-borders;
+  padding-left: 1rem;
+  transition: all 0.125s ease-in-out;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
+    outline: none;
+    border-color: $primary-cta;
   }
 }

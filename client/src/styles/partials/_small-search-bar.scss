@@ -17,7 +17,6 @@
     width: 100%;
     max-width: $maximum-width;
     display: flex;
-    // justify-content: center;
     flex-wrap: wrap;
     align-items: flex-end;
   }
@@ -43,32 +42,10 @@
   }
 
   &__job-form-input {
-    width: 95%;
-    margin-top: 0.5rem;
-    height: 2.4rem;
-    border-radius: $default-border-radius;
-    border: 1px solid $primary-borders;
-    padding-left: 1rem;
-
-    &:focus {
-      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
-      outline: none;
-      border-color: $primary-cta;
-    }
+    @extend %primary-input;
   }
 
   &__job-form-button {
-    border-radius: $default-border-radius;
-    background-color: $primary-cta;
-    color: $secondary-background;
-    border: 0;
-    height: 2.7rem;
-    padding: 0 2rem;
-    font-size: 0.8rem;
-    font-weight: bold;
-
-    &:hover {
-      background-color: darken($primary-cta, 10%);
-    }
+    @extend %primary-button;
   }
 }
