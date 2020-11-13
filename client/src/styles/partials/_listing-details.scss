@@ -1,15 +1,14 @@
 .listing-details {
   width: 50%;
-  max-width: 50rem;
-  height: calc(100% - 3rem);
+  max-width: 40rem;
+  height: 100%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 auto;
   position: sticky;
-  top: 2rem;
   border: 1px solid lighten($primary-borders, 25%);
   border-radius: 0.5rem;
-  margin: 1.5rem 0;
   overflow: auto;
 
   &__top-container {
@@ -57,5 +56,6 @@
 
   &__desc-container {
     padding: 1rem 1.5rem;
+    height: 100%;
   }
 }

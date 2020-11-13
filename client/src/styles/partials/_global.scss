@@ -26,10 +26,18 @@ body {
   height: 2.7rem;
   padding: 0 2rem;
   font-size: 0.8rem;
+
+  &:hover {
+    background-color: darken($primary-cta, 10%);
+  }
 }
 
 %secondary-button {
   @extend %primary-button;
   background-color: lighten($primary-borders, 30%);
   color: #000;
+
+  &:hover {
+    background-color: lighten($primary-borders, 20%);
+  }
 }
