@@ -1,12 +1,13 @@
-export default function SmallSearchBar() {
+export default function SmallSearchBar({ handleClick }) {
   return (
     <section className="results-search">
-      <form className="results-search__job-form">
+      <form onSubmit={(event) => handleClick(event)} className="results-search__job-form">
         <section className="results-search__job-form-section">
           <p className="results-search__job-form-heading">What</p>
           <label className="results-search__job-form-label">
             Job title, experience, or branch of the Empire
             <input
+              name="what"
               className="results-search__job-form-input"
               type="text"
               placeholder="Job title, experience, or branch of the Empire"
@@ -19,6 +20,7 @@ export default function SmallSearchBar() {
           <label className="results-search__job-form-label">
             Planet, galactic sector, or outpost
             <input
+              name="where"
               className="results-search__job-form-input"
               type="text"
               placeholder="Planet, galactic sector, or outpost"
