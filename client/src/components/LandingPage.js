@@ -2,7 +2,7 @@ import bb8 from '../assets/icons/bb8.svg';
 import SearchTag from './SearchTag';
 import { Link } from 'react-router-dom';
 
-export default function LandingPage() {
+export default function LandingPage({ handleClick }) {
 
     const popularSearches = [
         {
@@ -55,19 +55,19 @@ export default function LandingPage() {
                 </p>
             </section>
             <section className="landing-page__job-search">
-                <form className="landing-page__job-form">
+                <form className="landing-page__job-form" onSubmit={(event) => handleClick(event)}>
 
                     <section className="landing-page__job-form-section">
                         <p className="landing-page__job-form-heading">What</p>
                         <label className="landing-page__job-form-label">Job title, experience, or branch of the Empire
-                            <input className="landing-page__job-form-input" type="text" placeholder="Job title, experience, or branch of the Empire" />
+                            <input className="landing-page__job-form-input" name="what" type="text" placeholder="Job title, experience, or branch of the Empire" />
                         </label>
                     </section>
 
                     <section className="landing-page__job-form-section">
                         <p className="landing-page__job-form-heading">Where</p>
                         <label className="landing-page__job-form-label">Planet, galactic sector, or outpost
-                            <input className="landing-page__job-form-input" type="text" placeholder="Planet, galactic sector, or outpost" />
+                            <input className="landing-page__job-form-input" name="where" type="text" placeholder="Planet, galactic sector, or outpost" />
                         </label>
                     </section>
 

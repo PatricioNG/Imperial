@@ -1,13 +1,13 @@
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../assets/icons/ImperialLogo.svg';
 
-export default function ImperialHeader() {
+export default function ImperialHeader({ refreshData }) {
 
     return (
         <header className="imperial-header">
             <nav className="imperial-header__nav">
 
-                <Link to="/" className="imperial-header__nav-link imperial-header__nav-link--logo">
+                <Link onClick={() => refreshData()} to="/" className="imperial-header__nav-link imperial-header__nav-link--logo">
                     <img src={logo} alt="Imperial Logo" className="imperial-header__logo" />
                 </Link>
                 <ul className="imperial-header__nav-list">
