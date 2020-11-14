@@ -2,7 +2,7 @@ import SmallSearchBar from "./SmallSearchBar";
 import ListTiles from "./ListTiles";
 import ListingDetails from "./ListingDetails";
 
-export default function ResultsPage({ jobs, selectedJob, handleClick }) {
+export default function ResultsPage({ jobs, selectedJob, handleClick, handleClickJobListing }) {
   return (
     <main className="results-page">
       <SmallSearchBar handleClick={handleClick} />
@@ -11,18 +11,18 @@ export default function ResultsPage({ jobs, selectedJob, handleClick }) {
           {jobs.length === 0 ? (
             <li className="job-tile__no-results">No results found</li>
           ) : (
-            jobs.map((job) => <ListTiles job={job} handleClick={handleClick} />)
-          )}
+              jobs.map((job) => <ListTiles job={job} handleClick={handleClickJobListing} />)
+            )}
         </ul>
         {selectedJob ? (
           <ListingDetails job={selectedJob} />
         ) : (
-          <section className="listing-details">
-            <h4 className="results-page__no-results">
-              Select a listing for more details
+            <section className="listing-details">
+              <h4 className="results-page__no-results">
+                Select a listing for more details
             </h4>
-          </section>
-        )}
+            </section>
+          )}
       </div>
     </main>
   );

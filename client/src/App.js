@@ -22,6 +22,7 @@ function App() {
 
   const handleClick = (event) => {
     event.preventDefault();
+    setSelectedJob(null);
 
     const searchTerms = {
       what: event.target.what.value.toLowerCase(),
@@ -50,6 +51,7 @@ function App() {
 
   const refreshData = () => {
     getJobList().then((data) => setJobList(data));
+    setSelectedJob(null);
   };
 
   useEffect(() => {
@@ -61,7 +63,7 @@ function App() {
       <ImperialHeader refreshData={refreshData} />
       <Switch>
         <Route path="/" exact render={(routerProps) => <LandingPage handleClick={handleClick} />} />
-        <Route path="/jobs" exact render={() => <ResultsPage jobs={filteredJobs} selectedJob={selectedJob} handleClick={handleClick} />} />
+        <Route path="/jobs" exact render={() => <ResultsPage jobs={filteredJobs} selectedJob={selectedJob} handleClick={handleClick} handleClickJobListing={handleClickJobListing} />} />
         <Route path="/report" exact component={ReportPage} />
       </Switch>
     </div>
