@@ -3,10 +3,9 @@ import ListTiles from "./ListTiles";
 import ListingDetails from "./ListingDetails";
 
 export default function ResultsPage({ jobs, selectedJob, handleClick }) {
-  console.log("jobs:", jobs);
   return (
     <main className="results-page">
-      <SmallSearchBar />
+      <SmallSearchBar handleClick={handleClick} />
       <div className="results-page__results-container">
         <ul className="results-page__results-list">
           {jobs.length === 0 ? (
