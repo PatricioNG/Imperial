@@ -9,21 +9,27 @@ import { useEffect, useState } from "react";
 import { getJobList } from "./utils/APIs";
 
 function App() {
-
-  const history = useHistory()
+  const history = useHistory();
 
   const [jobList, setJobList] = useState(null);
   const [filteredJobs, setFilteredJobs] = useState(null);
+
+  const [selectedJob, setSelectedJob] = useState(null);
+
+  const handleClickJobListing = (e, id) => {
+    setSelectedJob(jobList[jobList.findIndex((job) => job.id === id)]);
+  };
 
   const handleClick = (event) => {
     event.preventDefault();
 
     const searchTerms = {
       what: event.target.what.value.toLowerCase(),
-      where: event.target.where.value.toLowerCase()
-    }
+      where: event.target.where.value.toLowerCase(),
+    };
 
-    if (searchTerms.what.trim() && searchTerms.where.trim()) { //Both terms exist
+    if (searchTerms.what.trim() && searchTerms.where.trim()) {
+      //Both terms exist
       let newJobList = jobList.filter((job) => {
         return job.title.toLowerCase().includes(searchTerms.what) || job.company.toLowerCase().includes(searchTerms.what)
       })
@@ -39,23 +45,23 @@ function App() {
       setFilteredJobs(jobList);
     }
 
-    history.push('/jobs');
-  }
+    history.push("/jobs");
+  };
 
   const refreshData = () => {
     getJobList().then((data) => setJobList(data));
-  }
+  };
 
   useEffect(() => {
     getJobList().then((data) => setJobList(data));
-  }, [])
+  }, []);
 
   return (
     <div className="App">
       <ImperialHeader refreshData={refreshData} />
       <Switch>
         <Route path="/" exact render={(routerProps) => <LandingPage handleClick={handleClick} />} />
-        <Route path="/jobs" exact render={() => <ResultsPage jobs={filteredJobs} handleClick={handleClick} />} />
+        <Route path="/jobs" exact render={() => <ResultsPage jobs={filteredJobs} selectedJob={selectedJob} handleClick={handleClick} />} />
         <Route path="/report" exact component={ReportPage} />
       </Switch>
     </div>

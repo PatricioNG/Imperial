@@ -518,6 +518,10 @@ body {
   margin: 0;
 }
 
+.results-page__no-results {
+  text-align: center;
+}
+
 .results-search {
   width: 100%;
   border-bottom: 1px solid #e1e1e1;
@@ -590,7 +594,6 @@ body {
   width: 50%;
   min-width: 20rem;
   max-width: 40rem;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -609,6 +612,7 @@ body {
   position: -webkit-sticky;
   position: sticky;
   top: 1.5rem;
+  bottom: 1.5rem;
   border: 1px solid #d4d4d4;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -655,8 +659,15 @@ body {
 }
 
 .listing-details__desc-container {
-  padding: 1rem 1.5rem;
+  width: 100%;
+  padding: 1rem 1.5rem 2rem;
   height: 100%;
+}
+
+.listing-details__posting-date {
+  margin: 0.25rem 0;
+  font-size: 0.85rem;
+  color: #949494;
 }
 
 .report-page {

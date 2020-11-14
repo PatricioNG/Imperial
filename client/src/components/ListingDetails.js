@@ -1,45 +1,32 @@
 import { Link } from "react-router-dom";
 import imperialSymbol from "../assets/icons/imperialSymbol.svg";
 
-export default function ListingDetails() {
+export default function ListingDetails({ job }) {
+  const listifier = (list) => {
+    return list.map((item, index) => <li key={index}>{item}</li>);
+  };
+
   return (
     <section className="listing-details">
       <div className="listing-details__top-container">
         <img src={imperialSymbol} alt="" className="listing-details__logo" />
         <div className="listing-details__text-container">
-          <h2 className="listing-details__job-title">Job Title</h2>
-          {/* job title */}
-          <p className="listing-details__job-text">Company - Location</p>
-          {/* company - location */}
+          <h2 className="listing-details__job-title">{job.title}</h2>
           <p className="listing-details__job-text">
-            Full-time, Permanent - Remote
+            {job.company} - {job.location}
+          </p>
+          <p className="listing-details__job-text">
+            Full-time, Permanent - On-site
           </p>
         </div>
-        {/* contract - on-site/remote */}
         <button className="listing-details__button">Apply Now</button>
         <button className="listing-details__button-secondary">Save</button>
       </div>
       <div className="listing-details__desc-container">
-        {/* job description - intro */}
-        <p>
-          We’re looking for developers to help build our platform that will
-          touch millions of people. We’re changing a huge industry and creating
-          beautiful user experiences along the way. We're an early-stage company
-          with a flat organization structure, so title and hierarchy are
-          flexible. Autozen is a well-funded tech company in stealth mode with a
-          great team and massive market = big opportunity. We’re making moves to
-          be a hyper-growth company.
-        </p>
+        {job.description ? <p>job.description</p> : null}
         {/* job description - responsibilities */}
         <h3>Responsibilities</h3>
-        <ul>
-          <li>Perk</li>
-          <li>Perk</li>
-          <li>Perk</li>
-          <li>Perk</li>
-          <li>Perk</li>
-          <li>Perk</li>
-        </ul>
+        <ul>{listifier(job.responsibilities)}</ul>
         {/* job description - perks */}
         <h3>Perks</h3>
         <ul>
@@ -50,7 +37,10 @@ export default function ListingDetails() {
           <li>Perk</li>
           <li>Perk</li>
         </ul>
-        <p>Posted x days ago</p> {/* postedDaysAgo */}
+        <p className="listing-details__posting-date">
+          Posted {job.postedDaysAgo} days ago
+        </p>{" "}
+        {/* postedDaysAgo */}
         <Link to="/report">report job</Link>
       </div>
     </section>
