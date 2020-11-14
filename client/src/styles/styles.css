@@ -707,6 +707,7 @@ body {
   position: relative;
   -webkit-transition: all 0.125s ease-in-out;
   transition: all 0.125s ease-in-out;
+  background-color: #FFFFFF;
 }
 
 .job-tile:hover {
