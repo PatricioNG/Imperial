@@ -2,19 +2,28 @@ import SmallSearchBar from "./SmallSearchBar";
 import ListTiles from "./ListTiles";
 import ListingDetails from "./ListingDetails";
 
-export default function ResultsPage({ jobs }) {
+export default function ResultsPage({ jobs, selectedJob, handleClick }) {
+  console.log("jobs:", jobs);
   return (
     <main className="results-page">
-      {/* search bar & filters? */}
       <SmallSearchBar />
       <div className="results-page__results-container">
-        {/* results lists on the left */}
         <ul className="results-page__results-list">
-          {jobs.length === 0 ? <li className="job-tile__no-results">No results found</li> :
-            jobs.map((job) => <ListTiles job={job} />)}
+          {jobs.length === 0 ? (
+            <li className="job-tile__no-results">No results found</li>
+          ) : (
+            jobs.map((job) => <ListTiles job={job} handleClick={handleClick} />)
+          )}
         </ul>
-        {/* specific listing details on the right (sticky) */}
-        <ListingDetails />
+        {selectedJob ? (
+          <ListingDetails job={selectedJob} />
+        ) : (
+          <section className="listing-details">
+            <h4 className="results-page__no-results">
+              Select a listing for more details
+            </h4>
+          </section>
+        )}
       </div>
     </main>
   );
