@@ -11,11 +11,11 @@ export default function ResultsPage({ jobs, selectedJob, handleClick, handleClic
           {jobs.length === 0 ? (
             <li className="job-tile__no-results">No results found</li>
           ) : (
-              jobs.map((job) => <ListTiles job={job} handleClick={handleClickJobListing} />)
+              jobs.map((job, index) => <ListTiles key={index} job={job} handleClick={handleClickJobListing} />)
             )}
         </ul>
         {selectedJob ? (
-          <ListingDetails job={selectedJob} />
+          <ListingDetails jobID={selectedJob.id} />
         ) : (
             <section className="listing-details">
               <h4 className="results-page__no-results">

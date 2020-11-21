@@ -51,5 +51,67 @@
         "responsibilities": [
             "Follow orders."
         ]
+    },
+    {
+        "id": 5,
+        "title": "Barista",
+        "company": "Empirebucks",
+        "rating": 5,
+        "reviewCount": 43215,
+        "location": "DS-1 Death Star",
+        "image": "./images/empirebucks.png",
+        "responsibilities": [
+            "Brew fresh coffee daily, using only the darkest beans",
+            "Serve coffee the way the dark side intended - black",
+            "No smiling, but no frowning either, remember Empirebucks is meant to be a relaxing place to enjoy your sanctioned 10 minute break, just make sure you're not enjoying your break too much."
+        ],
+        "postedDaysAgo": 164
+    },
+    {
+        "id": 6,
+        "title": "Teller",
+        "company": "Imperial Dominion Bank (ID Bank)",
+        "rating": 2,
+        "reviewCount": 5342,
+        "location": "DS-1 Death Star",
+        "image": "./images/idbank.png",
+        "responsibilities": [
+            "Process deposits daily",
+            "Take in customer complaints, log the ID of the complainers, then destroy them",
+            "Identify personnel who have saved more than the recommended allowance, transfer their funds to the Empire."
+        ],
+        "postedDaysAgo": 15
+    },
+    {
+        "id": 7,
+        "title": "Commissary Server",
+        "company": "McImperial's",
+        "rating": 1,
+        "reviewCount": 80448,
+        "location": "DS-1 Death Star",
+        "image": "./images/mcimperials.png",
+        "responsibilities": [
+            "Order intake, Imperial and otherwise",
+            "Superior time management - there are a lot of hungry troopers out there! Despite the fact this is space, everyone takes lunch at the same time",
+            "Daily cleaning of the Play Place"
+        ],
+        "postedDaysAgo": 3
+    },
+    {
+        "id": 8,
+        "title": "Commissary Server",
+        "company": "Dunkin' Droids",
+        "rating": 2,
+        "reviewCount": 992,
+        "location": "DS-1 Death Star",
+        "image": "./images/dunkindroids.png",
+        "responsibilities": [
+            "Order intake, Imperial and otherwise",
+            "Actually, the Droids do most of the work, you just need to stay out of their way",
+            "Insert as many demeaning jabs as possible towards Empire Bucks when conversing with customers",
+            "Regular coffee runs to Sith meetings",
+            "Droid polishing"
+        ],
+        "postedDaysAgo": 83
     }
 ]
