@@ -92,5 +92,103 @@
             ],
             "postedDaysAgo": 5468
         }
+    },
+    {
+        "id": 5,
+        "title": "Barista",
+        "company": "Empirebucks",
+        "rating": 5,
+        "reviewCount": 43215,
+        "location": "DS-1 Death Star",
+        "image": "./images/empirebucks.png",
+        "details": {
+            "perks": [
+                "Coffee, in space!",
+                "Empirebucks is the parent company formerly know as Starbucks, with the imperial takeover you can happily support caffinating our troops.",
+                "Use the latest in espresso technology, our grounds press uses the same force as the Death Star's trash compactor!",
+                "Tons of growth opportunities to our 2,340,523,124,644 other branches throughout the galaxy."
+            ],
+            "jobDescription": "Spend your days on the Death Star serving up the Empire's finest coffee to our loyal staff. Remember that since the shift from Starbucks to Empirebucks we only serve coffee the way the dark side approves, black with no sugar, this means your job is quite straight forward and easy! Absolutely no chance or risk of getting into a fight, unless you burn the beans on the Emperor's coffee, in which case Empirebucks takes no ownership over impending loss of life.",
+            "responsibilities": [
+                "Brew fresh coffee daily, using only the darkest beans",
+                "Serve coffee the way the dark side intended - black",
+                "No smiling, but no frowning either, remember Empirebucks is meant to be a relaxing place to enjoy your sanctioned 10 minute break, just make sure you're not enjoying your break too much."
+            ],
+            "postedDaysAgo": 164
+        }
+    },
+    {
+        "id": 6,
+        "title": "Teller",
+        "company": "Imperial Dominion Bank (ID Bank)",
+        "rating": 2,
+        "reviewCount": 5342,
+        "location": "DS-1 Death Star",
+        "image": "./images/idbank.png",
+        "details": {
+            "perks": [
+                "Not every job on the Death Star needs to be in the military, try banking instead!",
+                "Contribute to the Empire's funding by skimming 25% off of everyone's paycheque, for the Empire!",
+                "Casual Fridays anyone?",
+                "Office life is the best life in our opinion!"
+            ],
+            "jobDescription": "ID Bank is here to serve our loyal customers, and of course, fund the Empire. By banking with ID Bank you directly contribute 25% of your income to the Empire with every paycheque, think of the karma you'll be racking up! Our Tellers are at the heart of our business, serving our loyal client base and ensuring that any complaints and recorded, shredded, and then incinerated, remember - you don't complain about the Empire, the Empire complains about you!",
+            "responsibilities": [
+                "Process deposits daily",
+                "Take in customer complaints, log the ID of the complainers, then destroy them",
+                "Identify personnel who have saved more than the recommended allowance, transfer their funds to the Empire."
+            ],
+            "postedDaysAgo": 15
+        }
+    },
+    {
+        "id": 7,
+        "title": "Commissary Server",
+        "company": "McImperial's",
+        "rating": 1,
+        "reviewCount": 80448,
+        "location": "DS-1 Death Star",
+        "image": "./images/mcimperials.png",
+        "details": {
+            "perks": [
+                "Absolutely no food discounts",
+                "Listen to the same band playing in the McCantina, day in, day out",
+                "That grease smell really never leaves your clothes",
+                "Free ice cream to whoever can fix the machine"
+            ],
+            "jobDescription": "Get ready to say \"I'm lovin' it!\" to more than just your mandated devotion to the Empire &ndash; now YOU can serve it up to our fellow Imperials, fries and all.",
+            "responsibilities": [
+                "Order intake, Imperial and otherwise",
+                "Superior time management - there are a lot of hungry troopers out there! Despite the fact this is space, everyone takes lunch at the same time",
+                "Daily cleaning of the Play Place"
+            ],
+            "postedDaysAgo": 3
+        }
+    },
+    {
+        "id": 8,
+        "title": "Commissary Server",
+        "company": "Dunkin' Droids",
+        "rating": 2,
+        "reviewCount": 992,
+        "location": "DS-1 Death Star",
+        "image": "./images/dunkindroids.png",
+        "details": {
+            "perks": [
+                "Mandatorily enjoy daily leftovers (paycheques will be deducted accordingly for lost sales)",
+                "The best coffee in the whole Empire (SUCK IT, EMPIRE BUCKS)",
+                "Trooper helmet-style hairnets - feel like a badass!",
+                "Sleep easy at night knowing that the caffeine- and suger-induced high provided daily to the Trooper forces is really making a difference"
+            ],
+            "jobDescription": "An Imperial's work is never done, but at least we can enjoy a refreshing buzz of caffeine every day &ndash; and now you can join our front lines in serving it up! You will be tasked with monitoring all 170 locations across the Death Star, maintaining the server Droids and being seen by customers as little as possible. Any conflict of interest regarding Empire Bucks will result in immediate termination and reporting to Elite Imperial Forces for subsequent punishment on our authority.",
+            "responsibilities": [
+                "Order intake, Imperial and otherwise",
+                "Actually, the Droids do most of the work, you just need to stay out of their way",
+                "Insert as many demeaning jabs as possible towards Empire Bucks when conversing with customers",
+                "Regular coffee runs to Sith meetings",
+                "Droid polishing"
+            ],
+            "postedDaysAgo": 83
+        }
     }
 ]
